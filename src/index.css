@@ -1,13 +1,126 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+.nth-indicator div {
+  background-color: rgb(136, 191, 243);
+  width: 80px;
+  height: 80px;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  font-weight: 500;
+  border-radius: 5px;
+  font-size: 1.1em;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+}
+
+.active {
+  background-color: rgb(7, 24, 60) !important;
+}
+
+.home-main {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(8, 20, 39);
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+.nth-input {
+  width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.nth-indicator {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(255, 255, 255);
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  padding: 20px 20px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+.nth-input label {
+  color: white;
+  font-size: 1.3em;
+  font-weight: 600;
+  width: 220px;
+  margin: 3px;
+}
+.nth-input input {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.title {
+  color: white;
+  font-size: 3em;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+.desc {
+  color: white;
+  font-size: 1.5em;
+  font-weight: 600;
+  margin-top: 20px;
+  width: 600px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+@media (max-width: 767px) {
+  .nth-indicator div {
+    width: 50px;
+    height: 50px;
+    font-size: 1em;
+  }
+  .home-main {
+    width: 100dvw;
+    height: 100dvh;
+  }
+  .nth-input {
+    width: 100dvw;
+  }
+  .nth-indicator {
+    width: 300px;
+    margin-bottom: 30px;
+  }
+  .nth-input label {
+    font-size: 1em;
+    width: 170px;
+  }
+  .nth-input input {
+    width: 20px;
+    height: 20px;
+  }
+  .title {
+    width: 300px;
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+  }
+  .desc {
+    margin-top: 20px;
+
+    width: 300px;
+    font-size: 1em;
+  }
 }
